@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="script.js"></script>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <p id="prueba"></p>
+
+    <table>
+        <tr>
+            <th colspan="4">
+                <section readonly id="screen"></section>
+            </th>
+        </tr>
+        <tr>
+            <th><button type="button" value="7" onclick="buttons(this.value)" class="calc">7</button></th>
+            <th><button type="button" value="8" onclick="buttons(this.value)" class="calc">8</button></th>
+            <th><button type="button" value="9" onclick="buttons(this.value)" class="calc">9</button></th>
+            <th><button type="button" value="x" onclick="calcOperator(this.value)" class="calc">x</button></th>
+        </tr>
+        <tr>
+            <th><button type="button" value="4" onclick="buttons(this.value)" class="calc">4</button></th>
+            <th><button type="button" value="5" onclick="buttons(this.value)" class="calc">5</button></th>
+            <th><button type="button" value="6" onclick="buttons(this.value)" class="calc">6</button></th>
+            <th><button type="button" value="-" onclick="calcOperator(this.value)" class="calc">-</button></th>
+        </tr>
+        <tr>
+            <th><button type="button" value="1" onclick="buttons(this.value)" class="calc">1</button></th>
+            <th><button type="button" value="2" onclick="buttons(this.value)" class="calc">2</button></th>
+            <th><button type="button" value="3" onclick="buttons(this.value)" class="calc">3</button></th>
+            <th><button type="button" value="+" onclick="calcOperator(this.value)" class="calc">+</button></th>
+        </tr>
+        <tr>
+
+            <th colspan="2"><button type="button" value="0" onclick="buttons(this.value)">0</button></th>
+            <th><button type="button" value="." onclick="buttons(this.value)" class="calc">.</button></th>
+            <th><button type="button" value="/" onclick="calcOperator(this.value)" class="calc">/</button></th>
+
+        </tr>
+        <tr>
+            <th colspan="3"><button type="button" onclick="clearCalc()">C</button></th>
+            <th><button type="button" value="=" onclick="equals()" class="calc">=</button></th>
+        </tr>
+    </table>
+</body>
+
+</html>
