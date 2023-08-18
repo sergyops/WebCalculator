@@ -1,4 +1,4 @@
-button {
+.lcalc {
 
   border-radius: 10px;
   font-size: 24px;
@@ -11,13 +11,13 @@ button {
 
 }
 
-button:hover {
+.lcalc:hover {
 
   background-color: cornflowerblue;
 
 }
 
-button:active {
+.lcalc:active {
 
   background-color: darkkhaki;
 

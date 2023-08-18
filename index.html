@@ -11,7 +11,8 @@
 </head>
 
 <body>
-    <p id="prueba"></p>
+
+    <button onclick="location.href='./CurrencyConversion/index.html'">Currency conversion</button>
 
     <table>
         <tr>
@@ -20,33 +21,33 @@
             </th>
         </tr>
         <tr>
-            <th><button type="button" value="7" onclick="buttons(this.value)" class="calc">7</button></th>
-            <th><button type="button" value="8" onclick="buttons(this.value)" class="calc">8</button></th>
-            <th><button type="button" value="9" onclick="buttons(this.value)" class="calc">9</button></th>
-            <th><button type="button" value="x" onclick="calcOperator(this.value)" class="calc">x</button></th>
+            <th><button type="button" value="7" onclick="buttons(this.value)" class="calc lcalc">7</button></th>
+            <th><button type="button" value="8" onclick="buttons(this.value)" class="calc lcalc">8</button></th>
+            <th><button type="button" value="9" onclick="buttons(this.value)" class="calc lcalc">9</button></th>
+            <th><button type="button" value="x" onclick="calcOperator(this.value)" class="calc lcalc">x</button></th>
         </tr>
         <tr>
-            <th><button type="button" value="4" onclick="buttons(this.value)" class="calc">4</button></th>
-            <th><button type="button" value="5" onclick="buttons(this.value)" class="calc">5</button></th>
-            <th><button type="button" value="6" onclick="buttons(this.value)" class="calc">6</button></th>
-            <th><button type="button" value="-" onclick="calcOperator(this.value)" class="calc">-</button></th>
+            <th><button type="button" value="4" onclick="buttons(this.value)" class="calc lcalc">4</button></th>
+            <th><button type="button" value="5" onclick="buttons(this.value)" class="calc lcalc">5</button></th>
+            <th><button type="button" value="6" onclick="buttons(this.value)" class="calc lcalc">6</button></th>
+            <th><button type="button" value="-" onclick="calcOperator(this.value)" class="calc lcalc">-</button></th>
         </tr>
         <tr>
-            <th><button type="button" value="1" onclick="buttons(this.value)" class="calc">1</button></th>
-            <th><button type="button" value="2" onclick="buttons(this.value)" class="calc">2</button></th>
-            <th><button type="button" value="3" onclick="buttons(this.value)" class="calc">3</button></th>
-            <th><button type="button" value="+" onclick="calcOperator(this.value)" class="calc">+</button></th>
+            <th><button type="button" value="1" onclick="buttons(this.value)" class="calc lcalc">1</button></th>
+            <th><button type="button" value="2" onclick="buttons(this.value)" class="calc lcalc">2</button></th>
+            <th><button type="button" value="3" onclick="buttons(this.value)" class="calc lcalc">3</button></th>
+            <th><button type="button" value="+" onclick="calcOperator(this.value)" class="calc lcalc">+</button></th>
         </tr>
         <tr>
 
-            <th colspan="2"><button type="button" value="0" onclick="buttons(this.value)">0</button></th>
-            <th><button type="button" value="." onclick="buttons(this.value)" class="calc">.</button></th>
-            <th><button type="button" value="/" onclick="calcOperator(this.value)" class="calc">/</button></th>
+            <th colspan="2"><button type="button" value="0" onclick="buttons(this.value)" class="lcalc">0</button></th>
+            <th><button type="button" value="." onclick="buttons(this.value)" class="calc lcalc">.</button></th>
+            <th><button type="button" value="/" onclick="calcOperator(this.value)" class="calc lcalc">/</button></th>
 
         </tr>
         <tr>
-            <th colspan="3"><button type="button" onclick="clearCalc()">C</button></th>
-            <th><button type="button" value="=" onclick="equals()" class="calc">=</button></th>
+            <th colspan="3"><button type="button" onclick="clearCalc()" class="lcalc">C</button></th>
+            <th><button type="button" value="=" onclick="equals()" class="calc lcalc">=</button></th>
         </tr>
     </table>
 </body>
